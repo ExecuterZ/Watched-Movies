@@ -14,8 +14,9 @@ let personalMovieDB = {
     privat: false
 };
 
-let lastFilm = prompt('Какой был один из последний просмотренныых фильмов?', '');
-let markLastFilm = prompt('На сколько оцените его?', '');
-
-personalMovieDB.movies = lastFilm + " : " + markLastFilm;
-console.log(personalMovieDB);
+for (let i = 0; i<2; i++) {
+const a = prompt('Какой был один из просмотренных фильмов?',''),
+    b = prompt('На сколько оцените его?', '');
+    personalMovieDB.movies[a] = 'оценка = ' + b;
+}
+console.log(personalMovieDB); 
