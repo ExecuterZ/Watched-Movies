@@ -17,6 +17,5 @@ let personalMovieDB = {
 for (let i = 0; i<2; i++) {
 const a = prompt('Какой был один из просмотренных фильмов?',''),
     b = prompt('На сколько оцените его?', '');
-    personalMovieDB.movies[a] = 'оценка = ' + b;
-}
+    personalMovieDB.movies[a] = 'оценка = ' + b;}
 console.log(personalMovieDB); 
